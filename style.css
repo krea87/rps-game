@@ -22,6 +22,10 @@ h2 {
     font-size: clamp(.5rem, calc(1vw + .5rem), 1rem);
 }
 
+input {
+    background: transparent;
+    border: 1px black solid;
+}
 button {
     width: 200px;
     padding: min(1rem, 10%);

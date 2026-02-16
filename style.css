@@ -1,0 +1,44 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    transition: all 600ms ease-in-out;
+    background: linear-gradient(270deg, rgb(212, 0, 255), rgb(0, 17, 255));
+}
+.container {
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: clamp(1rem, calc(2vw + 1rem), 2rem);
+}
+
+h2 {
+    font-size: clamp(.5rem, calc(1vw + .5rem), 1rem);
+}
+
+button {
+    width: 200px;
+    padding: min(1rem, 10%);
+    font-size: clamp(2rem, calc(4vw + 1rem), 3rem);
+    border: 1px black solid;
+    background: rgba(2, 2, 150, 0.164);
+}
+
+button:hover {
+    background: rgba(2, 2, 150, 0.671);
+    transition: all 800ms ease-in-out;
+}
+
+.choices {
+    font-size: clamp(.5rem, calc(2vw + .5rem) 2rem);
+}
+
+.playerChoice-display, .computerChoice-display {
+    font-size: inherit;
+}
